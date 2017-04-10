@@ -10,7 +10,10 @@
     console.log('Wassup inside repo function in directive');
     return {
       templateUrl: 'repos/repo.template.html',
-      restrict: 'E'
+      restrict: 'E',
+      scope: {
+        repo: '=repo'
+      }
 
     };
   }
