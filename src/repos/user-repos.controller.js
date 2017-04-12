@@ -9,7 +9,7 @@
         let vm = this;
         vm.list = [];
         vm.user = {};
-
+      
         vm.lookup = function lookup(user) {
             GithubService.getRepos(user)
                 .then(function setReposOnScope(repos) {

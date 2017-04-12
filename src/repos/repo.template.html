@@ -1,12 +1,14 @@
 
-<artcile class="panel panel-default">
-  <section class="panel-heading">
+<article class="panel panel-default">
+  <header class="panel-heading">
     <h3 class="panel-title">{{repo.name}}</h3>
-  </section>
+  </header>
   <section class="panel-body">
     <p>Full Name {{repo.full_name}}</p>
     <p>Forks {{repo.forks}}</p>
     <p>Size {{repo.size}}</p>
     <p>Stargazers Count {{repo.stargazers_count}}</p>
+    <p>Popularity {{repo.popularity}}</p>
+    <p>Size: {{repo.size | sizeFilter}}</p>
   </section>
 </article>
