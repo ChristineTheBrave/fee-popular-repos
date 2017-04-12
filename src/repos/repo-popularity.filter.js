@@ -4,6 +4,12 @@
   angular.module('gh')
     .filter('repoPopularity', repoPopularity);
 
+
+    /**
+     * Takes in an array and creates copy of original
+     * @param  {Array}
+     * @return {Array} Sorted array after calculating popularity
+     */
   function repoPopularity() {
     return function doRepoPopularity(repos) {
 
